@@ -17,11 +17,11 @@ This project is a clone of the Netflix homepage, built using React and styled wi
 ## Installation
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/netflix-homepage-clone.git
+   git clone https://github.com/jaysisharma/NeflixClone.git
    ```
 2. Navigate into the project directory.
    ```bash
-   cd netflix-homepage-clone
+   cd netflixClone
    ```
 3. Install dependencies using npm or yarn.
    ```bash
