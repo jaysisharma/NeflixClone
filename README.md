@@ -4,7 +4,7 @@ Got it! Here's a README.md specifically tailored for a Netflix homepage clone:
 
 # Netflix Homepage Clone
 
-![Netflix Clone Logo](./src/assets/netflix-logo.png)
+![Netflix Clone Logo](.ss.png)
 
 ## Overview
 This project is a clone of the Netflix homepage, built using React and styled with Tailwind CSS. It aims to replicate the layout and design of the Netflix homepage, providing users with a familiar browsing experience.
