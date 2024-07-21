@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8C8B76;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+}
+
+.user-actions button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.categories {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.categories ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.categories ul li {
+    margin: 0 10px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero-text p {
+    margin: 10px 0;
+}
+
+.hero-text button {
+    background-color: #FFA500;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #8C8B76;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="path_to_logo.png" alt="Cake Shop Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">RAKHI</a></li>
+                    <li><a href="#">BIRTHDAY</a></li>
+                    <li><a href="#">ANNIVERSARY</a></li>
+                    <li><a href="#">CAKES</a></li>
+                    <li><a href="#">FLOWERS</a></li>
+                    <li><a href="#">PERSONALISED</a></li>
+                    <li><a href="#">PLANTS</a></li>
+                    <li><a href="#">CHOCOLATES</a></li>
+                    <li><a href="#">COMBOS</a></li>
+                    <li><a href="#">LIFESTYLE</a></li>
+                    <li><a href="#">OCCASIONS</a></li>
+                    <li><a href="#">GLOBAL</a></li>
+                    <li><a href="#">ON TREND</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search flowers, cakes, gifts, etc.">
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <button>Cart</button>
+                <button>Hi Guest</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <ul>
+                <li><a href="#">All Cakes</a></li>
+                <li><a href="#">Birthday Cakes</a></li>
+                <li><a href="#">Eggless Cakes</a></li>
+                <li><a href="#">Chocolate Cakes</a></li>
+                <li><a href="#">Truffle Cakes</a></li>
+                <li><a href="#">Fresh Fruit Cakes</a></li>
+                <li><a href="#">Black Forest Cakes</a></li>
+                <li><a href="#">Cakes with Flowers</a></li>
+                <li><a href="#">Cakes with Plants</a></li>
+                <li><a href="#">Get Same Day</a></li>
+            </ul>
+        </section>
+
+        <section class="hero">
+            <div class="hero-slide">
+                <img src="path_to_hero_image.jpg" alt="Hero Image">
+                <div class="hero-text">
+                    <h1>Cakes that Click Instantly</h1>
+                    <p>Presenting our fab Photo Cake Collection</p>
+                    <button>Gift Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="highlight-item">
+                <img src="path_to_image.jpg" alt="Cake Image">
+                <p>Same Day Delivery</p>
+            </div>
+            <div class="highlight-item">
+                <img src="path_to_image.jpg" alt="Cake Image">
+                <p>Bestseller Cakes</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

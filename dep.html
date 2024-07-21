@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependency-Check Report Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .summary, .details, .recommendations {
+            margin-bottom: 20px;
+        }
+        .summary h2, .details h2, .recommendations h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .summary p, .details p, .recommendations p {
+            margin: 5px 0;
+        }
+        .vulnerabilities {
+            list-style-type: none;
+            padding: 0;
+        }
+        .vulnerabilities li {
+            background-color: #ffcccc;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .vulnerabilities li span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dependency-Check Report Summary</h1>
+        <div class="summary">
+            <h2>Summary</h2>
+            <p><strong>Project:</strong> Not Specified</p>
+            <p><strong>Dependency-Check Version:</strong> 10.0.3</p>
+            <p><strong>Report Generated On:</strong> Sun, 21 Jul 2024 10:27:27 GMT</p>
+            <p><strong>Dependencies Scanned:</strong> 4 (4 unique)</p>
+            <p><strong>Vulnerable Dependencies:</strong> 1</p>
+            <p><strong>Vulnerabilities Found:</strong> 2</p>
+            <p><strong>Vulnerabilities Suppressed:</strong> 0</p>
+        </div>
+        <div class="details">
+            <h2>Details</h2>
+            <p><strong>Dependency:</strong> braces:3.0.2</p>
+            <p><strong>File Path:</strong> /src/package-lock.json?braces</p>
+            <p><strong>Referenced In Project/Scope:</strong> package-lock.json: transitive</p>
+            <ul class="vulnerabilities">
+                <li>
+                    <img class="icon" src="https://img.icons8.com/color/48/000000/error--v1.png" alt="Error Icon">
+                    <span>Vulnerability:</span> CVE-2024-4068 (OSSINDEX)
+                </li>
+            </ul>
+            <p><strong>Highest Severity:</strong> High</p>
+            <p><strong>CVE Count:</strong> 2</p>
+            <p><strong>Confidence Level:</strong> Highest</p>
+        </div>
+        <div class="recommendations">
+            <h2>Recommendations</h2>
+            <p>To address the identified vulnerabilities, consider the following steps:</p>
+            <ul>
+                <li>
+                    <img class="icon" src="https://img.icons8.com/color/48/000000/update-left-rotation.png" alt="Update Icon">
+                    Update the <strong>braces</strong> dependency to the latest version if available.
+                </li>
+                <li>
+                    <img class="icon" src="https://img.icons8.com/color/48/000000/swap.png" alt="Replace Icon">
+                    If no update is available, replace <strong>braces</strong> with an alternative library that does not have known vulnerabilities.
+                </li>
+                <li>
+                    <img class="icon" src="https://img.icons8.com/color/48/000000/security-checked.png" alt="Scan Icon">
+                    Regularly scan your project dependencies using tools like <strong>npm audit</strong> to ensure they are up to date and secure.
+                </li>
+                <li>
+                    <img class="icon" src="https://img.icons8.com/color/48/000000/automatic.png" alt="Automation Icon">
+                    Integrate dependency scanning into your CI/CD pipeline to automatically check for vulnerabilities during the build process.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
